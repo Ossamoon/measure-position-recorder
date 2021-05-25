@@ -1,23 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
+
+import Sheet from './mozart_piano_sonata_11/1.png';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <img src={Sheet} alt="[sheet]" onClick={(e) => console.log("x: " + (e.pageX / 1734 * 100) + "%, y:" + (e.pageY / 2400 * 100))} />
     </div>
   );
 }
